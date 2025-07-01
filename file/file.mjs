@@ -29,3 +29,18 @@ fs.unlink("sample.txt", (err)=>{  // delete file
     if(err) throw err;
     console.log("File deleted!"); 
 });
+
+fs.rename("sample.txt", "newName.txt", (err) => {
+    if (err) throw err;
+    console.log("File renamed successfully!");
+});
+
+fs.mkdir("myFolder", (err) => {
+    if(err) throw err;
+    console.log("Folder created successfully!");
+});
+
+fs.rmdir("myFolder", (err) => {
+    if(err) throw err;
+    console.log("Folder deleted successfully!");
+});
